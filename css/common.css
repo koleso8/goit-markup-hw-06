@@ -1,0 +1,27 @@
+:root {
+    --main-text-color: #8e8f99;
+    --text: #2e2f42;
+    --back: #404bbf;
+    --white: #f4f4fd;
+    --link: #4d5ae5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #434455;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

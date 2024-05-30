@@ -23,46 +23,58 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/mobile.css" />
+        <link rel="stylesheet" href="./css/tablet.css" />
+        <link rel="stylesheet" href="./css/desktop.css" />
     </head>
     <body>
         <!-- #region HEADER -->
         <header class="header">
             <div class="container">
-                <nav class="header-nav">
-                    <a class="logo" href="./index.html"
-                        >Web<span class="span-logo">Studio</span></a
-                    >
-                    <ul class="header-list">
-                        <li class="header-item">
-                            <a class="header-link col" href="./index.html"
-                                ><span class="link-current"></span>Studio</a
-                            >
-                        </li>
-                        <li class="header-item">
-                            <a class="header-link" href="">Portfolio</a>
-                        </li>
-                        <li class="header-item">
-                            <a class="header-link" href="">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-                <address class="address">
-                    <ul class="address-list">
-                        <li class="address-item">
-                            <a
-                                class="address-link"
-                                href="mailto:info@devstudio.com"
-                                >info@devstudio.com</a
-                            >
-                        </li>
-                        <li class="address-item">
-                            <a class="address-link" href="tel:+110001111111"
-                                >+11 (000) 111-11-11</a
-                            >
-                        </li>
-                    </ul>
-                </address>
+                <a class="logo" href="./index.html"
+                    >Web<span class="span-logo">Studio</span></a
+                >
+
+                <a href="" class="burger-nav">
+                    <svg class="burger-svg" width="24" height="24">
+                        <use href="./images/icons.svg#burger"></use>
+                    </svg>
+                </a>
+                <div class="nav-modal">
+                    <nav class="header-nav">
+                        <ul class="header-list">
+                            <li class="header-item">
+                                <a class="header-link col" href="./index.html"
+                                    ><span class="link-current"></span>Studio</a
+                                >
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link" href="">Portfolio</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link" href="">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address class="address">
+                        <ul class="address-list">
+                            <li class="address-item">
+                                <a
+                                    class="address-link"
+                                    href="mailto:info@devstudio.com"
+                                    >info@devstudio.com</a
+                                >
+                            </li>
+                            <li class="address-item">
+                                <a class="address-link" href="tel:+110001111111"
+                                    >+11 (000) 111-11-11</a
+                                >
+                            </li>
+                        </ul>
+                    </address>
+                </div>
             </div>
         </header>
 
@@ -446,7 +458,7 @@
             <!-- #endregion TEAM -->
             <!-- #region PORTFOLIO -->
 
-            <section class="porfolio">
+            <!-- <section class="porfolio">
                 <div class="container">
                     <h2 class="portfolio-title">Our Portfolio</h2>
                     <ul class="portfolio-list">
@@ -575,13 +587,13 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
 
             <!-- #endregion PORTFOLIO -->
         </main>
         <!-- #region FOOTER -->
 
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container">
                 <div class="box">
                     <a class="footer-logo" href="./index.html"
@@ -654,11 +666,11 @@
                     </form>
                 </div>
             </div>
-        </footer>
+        </footer> -->
 
         <!-- #endregion FOOTER -->
         <!-- #region MODAL -->
-        <div class="modal is-open">
+        <!-- <div class="modal">
             <div class="modal-overlay">
                 <button type="button" class="btn-closed btn-close">
                     <svg class="close-icon" width="8" height="8">
@@ -758,33 +770,12 @@
                         </label>
                     </div>
 
-                    <!-- <div class="privaci-box">
-                        <input
-                            type="checkbox"
-                            id="user-privacy"
-                            value="true"
-                            class="input-check visually-hidden"
-                            name="user-privacy"
-                        />
-
-                        <label for="user-privacy" class="policy">
-                            <span class="check-box">
-                                <svg width="10" height="8" class="svg-check">
-                                    <use href="./images/icons.svg#vector"></use>
-                                </svg>
-                            </span>
-                            I accept the terms and conditions of the
-                            <a class="privacy-policy" href=""
-                                >Privacy Policy</a
-                            ></label
-                        >
-                      
-                    </div> -->
+                    
 
                     <button class="btn-modal" type="submit">Send</button>
                 </form>
             </div>
-        </div>
+        </div> -->
         <!-- #endregion MODAL -->
     </body>
 </html>
