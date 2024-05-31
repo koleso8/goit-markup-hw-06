@@ -37,11 +37,12 @@
                     >Web<span class="span-logo">Studio</span></a
                 >
 
-                <a href="" class="burger-nav">
+                <button type="button" href="" class="burger-nav">
                     <svg class="burger-svg" width="24" height="24">
                         <use href="./images/icons.svg#burger"></use>
                     </svg>
-                </a>
+                </button>
+
                 <div class="nav-modal">
                     <nav class="header-nav">
                         <ul class="header-list">
@@ -51,10 +52,12 @@
                                 >
                             </li>
                             <li class="header-item">
-                                <a class="header-link" href="">Portfolio</a>
+                                <a class="header-link" href="#port"
+                                    >Portfolio</a
+                                >
                             </li>
                             <li class="header-item">
-                                <a class="header-link" href="">Contacts</a>
+                                <a class="header-link" href="#cont">Contacts</a>
                             </li>
                         </ul>
                     </nav>
@@ -458,7 +461,7 @@
             <!-- #endregion TEAM -->
             <!-- #region PORTFOLIO -->
 
-            <section class="porfolio">
+            <section id="#port" class="porfolio">
                 <div class="container">
                     <h2 class="portfolio-title">Our Portfolio</h2>
                     <ul class="portfolio-list">
@@ -763,10 +766,12 @@
                                     <use href="./images/icons.svg#vector"></use>
                                 </svg>
                             </span>
-                            I accept the terms and conditions of the
-                            <a class="privacy-policy" href="#"
-                                >Privacy Policy</a
-                            >
+                            <span class="privacy-policy-span">
+                                I accept the terms and conditions of the
+                                <a class="privacy-policy" href="#"
+                                    >Privacy Policy</a
+                                >
+                            </span>
                         </label>
                     </div>
 
@@ -775,5 +780,77 @@
             </div>
         </div>
         <!-- #endregion MODAL -->
+
+        <!-- #region mobile menu -->
+        <div class="mobile-menu">
+            <button type="button" class="btn-close-menu">
+                <svg class="close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+            <ul class="header-mobile-list">
+                <li class="header-mobile-item active">
+                    <a class="header-mobile-link" href="./index.html"
+                        ><span class="link-current"></span>Studio</a
+                    >
+                </li>
+                <li class="header-mobile-item">
+                    <a class="header-mobile-link" href="#port">Portfolio</a>
+                </li>
+                <li class="header-mobile-item">
+                    <a class="header-mobile-link" href="#cont">Contacts</a>
+                </li>
+            </ul>
+
+            <address class="address">
+                <ul class="address-mobile-list">
+                    <li class="address-mobile-item">
+                        <a
+                            class="address-mobile-link active"
+                            href="tel:+110001111111"
+                            >+11 (000) 111-11-11</a
+                        >
+                    </li>
+                    <li class="address-mobile-item">
+                        <a
+                            class="address-mobile-link"
+                            href="mailto:info@devstudio.com"
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                </ul>
+            </address>
+            <ul class="media-list mob">
+                <li class="media-item">
+                    <a class="ref-link" href="">
+                        <svg width="24" height="24" class="media-svg">
+                            <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="media-item">
+                    <a class="ref-link" href="">
+                        <svg width="24" height="24" class="media-svg">
+                            <use href="./images/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="media-item">
+                    <a class="ref-link" href="">
+                        <svg width="24" height="24" class="media-svg">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="media-item">
+                    <a class="ref-link" href="">
+                        <svg width="24" height="24" class="media-svg">
+                            <use href="./images/icons.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- #endregion mobile menu -->
     </body>
 </html>

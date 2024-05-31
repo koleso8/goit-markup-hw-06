@@ -2,6 +2,10 @@
     .container {
         width: 768px;
     }
+
+    .mobile-menu {
+        display: none;
+    }
     /* #region Header */
     .head .container {
     }
@@ -9,26 +13,30 @@
         min-height: 72px;
     }
     .burger-nav {
-        opacity: 0;
-        pointer-events: none;
-        position: absolute;
+        display: none;
     }
     .nav-modal {
-        opacity: 1;
-        pointer-events: auto;
         display: flex;
-        position: static;
+
         gap: 120px;
     }
     .col {
-        opacity: 1;
         position: relative;
         color: #404bbf;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     /* #endregion Header */
 
     /* #region Hero */
+
+    .hero {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/tab@1x.jpg);
+    }
     .hero .container {
         gap: 0;
     }

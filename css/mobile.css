@@ -21,6 +21,7 @@
 
 .header .container {
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav {
@@ -40,6 +41,15 @@
 .span-logo {
     color: #2e2f42;
 }
+
+.mabile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .header-list {
     display: flex;
     gap: 40px;
@@ -93,6 +103,69 @@
     bottom: -3px;
     left: 0;
 }
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+.mobile-menu {
+    transform: translateX(100%);
+    transition: transform 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: 24px 24px 40px 16px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 320px;
+    max-width: 100%;
+    height: 640px;
+    background-color: #fff;
+}
+.btn-close-menu {
+    margin-left: auto;
+    margin-bottom: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-mobile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 168px;
+}
+
+.header-mobile-item {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+.active {
+    color: #404bbf;
+}
+.address-mobile-list {
+    margin-bottom: 48px;
+}
+.address-mobile-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.address-mobile-item:not(:last-child) {
+    margin-bottom: 24px;
+}
 
 /* #endregion Header */
 
@@ -103,12 +176,36 @@
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
         ),
-        url(../images/people-office.jpg);
+        url(../images/mob@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/mob@2x.jpg);
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) and (min-resolution: 96dpi) {
+    .hero {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/tab@2x.jpg);
+    }
 }
 
 .hero .container {
@@ -179,9 +276,7 @@
     letter-spacing: 0.02em;
 }
 .benefits-card {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
+    display: none;
 }
 
 /* #endregion Benefits */
@@ -652,7 +747,6 @@
     color: #8e8f99;
 }
 .form-label {
-    /* outline: 1px solid teal; */
     display: block;
     margin-bottom: 4px;
 
@@ -690,6 +784,8 @@
 .imput-box {
 }
 .modal-svg {
+    width: 18px;
+    height: 18px;
     position: absolute;
     top: 50%;
     left: 16px;
@@ -752,7 +848,8 @@
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
-    margin-bottom: 24px;
+    margin-bottom: auto;
+    margin-top: auto;
     /* background-color: #31d0aa; */
 }
 .input-check:checked + .policy .check-box .svg-check {
@@ -788,6 +885,7 @@
 }
 
 .btn-modal {
+    border-radius: 4px;
     display: block;
     margin: 0 auto;
     min-width: 169px;
@@ -803,6 +901,11 @@
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.btn-modal:hover,
+.btn-modal:focus {
+    background-color: #404bbf;
+}
 /* #endregion Modal */
 
 @media only screen and (min-width: 320px) {
@@ -810,22 +913,28 @@
         width: 100%;
     }
     /* #region Header */
-    .header .container {
-        max-height: 24px;
-    }
+
     .nav-modal {
-        position: absolute;
-        opacity: 0;
-        pointer-events: none;
+        display: none;
     }
     .burger-nav {
+        background-color: transparent;
+        height: 24px;
+        align-items: center;
+        padding: 0;
         margin-left: auto;
         margin-right: 0;
+        border: none;
     }
-    .col {
-        position: relative;
-        opacity: 0;
+
+    .burger-svg {
+        padding: 0;
     }
+
+    .mob {
+        gap: 40px;
+    }
+
     /* #endregion Header */
 
     /* #region Hero */
@@ -849,4 +958,16 @@
     /* #region FOOTER */
 
     /* #endregion FOOTER */
+    .privacy-policy-span {
+        display: block;
+        max-width: 231px;
+    }
+
+    .policy {
+        display: flex;
+    }
+
+    .privaci-box {
+        align-items: center;
+    }
 }
