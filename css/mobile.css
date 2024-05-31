@@ -46,7 +46,7 @@
             url('../images/tab@2x.jpg');
     }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
     .hero {
         background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
