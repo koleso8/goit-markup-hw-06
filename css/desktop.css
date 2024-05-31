@@ -48,6 +48,7 @@
     }
     .hero .container {
         gap: 0;
+        padding: 0;
     }
     .hero-title {
         margin-bottom: 48px;

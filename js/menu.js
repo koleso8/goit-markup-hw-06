@@ -1,8 +1,8 @@
-const menuBtns = document.querySelectorAll('.js-menu-btn')
-const menuEl = document.querySelector('.menu-container')
+const menuBtnsq = document.querySelectorAll('.js-menu-btn')
+const menuElq = document.querySelector('.menu-container')
 
-menuBtns.forEach((btn) => {
+menuBtnsq.forEach((btn) => {
     btn.addEventListener('click', () => {
-        menuEl.classList.toggle('is-open')
+        menuElq.classList.toggle('is-open')
     })
 })

@@ -135,4 +135,8 @@
         width: 338px;
     }
     /* #endregion Modal */
+
+    .media-list {
+        margin-bottom: 72px;
+    }
 }
