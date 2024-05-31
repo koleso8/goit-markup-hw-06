@@ -134,6 +134,12 @@
     /* #endregion FOOTER */
 
     /* #region Modal */
-
+    .modal-overlay {
+        width: 408px;
+        padding: 72px 24px 24px 24px;
+    }
+    .privacy-policy-span {
+        width: 338px;
+    }
     /* #endregion Modal */
 }

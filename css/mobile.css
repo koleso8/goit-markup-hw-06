@@ -850,7 +850,6 @@
     margin-right: 8px;
     margin-bottom: auto;
     margin-top: auto;
-    /* background-color: #31d0aa; */
 }
 .input-check:checked + .policy .check-box .svg-check {
     fill: var(--white);
@@ -960,7 +959,7 @@
     /* #endregion FOOTER */
     .privacy-policy-span {
         display: block;
-        max-width: 231px;
+        width: 231px;
     }
 
     .policy {
